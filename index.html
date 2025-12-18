@@ -1,16 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Nasry</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; background-color: #f4f4f4; }
+        .container { margin-top: 50px; }
+        .card { 
+            background: white; padding: 20px; border-radius: 10px; 
+            display: inline-block; box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-decoration: none; color: #333; transition: 0.3s;
+        }
+        .card:hover { transform: translateY(-5px); }
+    </style>
 </head>
 <body>
-    <h1>Selamat Datang di Website Nasry</h1>
-    <p>Berikut adalah project yang sudah saya buat:</p>
-
-    <ul>
-        <li>
-            <a href="vocab_quiz.html">Buka Project Vocab Quiz</a>
-        </li>
-    </ul>
+    <div class="container">
+        <h1>Halo, Saya Nasry!</h1>
+        <p>Selamat datang di kumpulan project saya.</p>
+        
+        <a href="vocab_quiz.html" class="card">
+            <h3>Vocab Quiz Game</h3>
+            <p>Klik untuk bermain game kosa kata.</p>
+        </a>
+    </div>
 </body>
 </html>
