@@ -5,145 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nasry | Portfolio</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background: #0f172a; color: #f8fafc; display: flex; justify-content: center; padding: 40px 20px; }
+        .container { max-width: 650px; width: 100%; }
         
-        body {
-            background: #0f172a;
-            color: #f8fafc;
-            line-height: 1.6;
-            padding: 40px 20px;
-        }
+        /* Profile Header */
+        header { text-align: center; margin-bottom: 40px; }
+        .profile-img { width: 120px; border-radius: 50%; border: 3px solid #38bdf8; margin-bottom: 15px; }
+        h1 { color: #38bdf8; font-size: 2.2rem; }
+        .tagline { color: #94a3b8; }
 
-        .container {
-            max-width: 700px;
-            margin: auto;
-        }
+        /* Section About Me (Lobby Hotel) */
+        .section { background: #1e293b; padding: 25px; border-radius: 15px; border: 1px solid #334155; margin-bottom: 30px; }
+        h2 { color: #38bdf8; margin-bottom: 10px; font-size: 1.4rem; border-bottom: 1px solid #334155; padding-bottom: 5px; }
+        p { color: #cbd5e1; line-height: 1.6; }
 
-        /* Header Section */
-        header { text-align: center; margin-bottom: 50px; }
+        /* Skills */
+        .skills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
+        .skill-tag { background: #38bdf8; color: #0f172a; padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; }
+
+        /* Project Links */
+        .card { background: #1e293b; padding: 20px; border-radius: 12px; border: 1px solid #334155; text-decoration: none; color: white; display: flex; justify-content: space-between; align-items: center; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); border-color: #38bdf8; }
         
-        .profile-img {
-            width: 120px; height: 120px;
-            border-radius: 50%;
-            border: 3px solid #38bdf8;
-            margin-bottom: 20px;
-            box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
-        }
-
-        h1 { font-size: 2.5rem; color: #38bdf8; margin-bottom: 5px; }
-        .tagline { color: #94a3b8; font-size: 1.1rem; }
-
-        /* About Section */
-        .section-title {
-            font-size: 1.5rem;
-            color: #38bdf8;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #1e293b;
-            display: inline-block;
-            padding-bottom: 5px;
-        }
-
-        .about-box {
-            background: #1e293b;
-            padding: 25px;
-            border-radius: 15px;
-            margin-bottom: 40px;
-            border: 1px solid #334155;
-        }
-
-        /* Skills Section */
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 40px;
-        }
-
-        .skill-badge {
-            background: #0ea5e9;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: bold;
-        }
-
-        /* Project Cards */
-        .project-list { display: grid; gap: 15px; margin-bottom: 40px; }
-
-        .card {
-            background: #1e293b;
-            padding: 20px;
-            border-radius: 12px;
-            text-decoration: none;
-            color: white;
-            border: 1px solid #334155;
-            transition: 0.3s;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .card:hover {
-            transform: scale(1.02);
-            border-color: #38bdf8;
-        }
-
-        /* Social Media */
-        .social-links { text-align: center; margin-top: 30px; }
-        .social-links a {
-            color: #94a3b8;
-            text-decoration: none;
-            margin: 0 10px;
-            transition: 0.3s;
-        }
-        .social-links a:hover { color: #38bdf8; }
-
-        footer { text-align: center; margin-top: 50px; font-size: 0.8rem; color: #64748b; }
+        footer { text-align: center; margin-top: 40px; color: #64748b; font-size: 0.8rem; }
     </style>
 </head>
 <body>
-
     <div class="container">
         <header>
-            <img src="https://github.com/Nasry01.png" alt="Profile" class="profile-img">
-            <h1>Nasry</h1>
-            <p class="tagline">Tech Learner & Future Developer</p>
+            <img src="https://github.com/Nasry01.png" alt="Nasry" class="profile-img">
+            <h1>Halo, Saya Nasry</h1>
+            <p class="tagline">Tech Enthusiast & Future Developer</p>
         </header>
 
-        <h2 class="section-title">Tentang Saya</h2>
-        <div class="about-box">
-            <p>Halo! Saya Nasry. Saat ini saya sedang aktif mempelajari pemrograman web melalui GitHub. Saya sangat tertarik dengan teknologi baru dan senang mencoba membuat berbagai macam project kecil untuk mengasah kemampuan logika saya.</p>
+        <div class="section">
+            <h2>🏠 Tentang Saya (Lobby)</h2>
+            <p>Selamat datang di profil saya! Saya adalah seorang pembelajar yang sangat tertarik dengan dunia pemrograman web. Saat ini saya sedang fokus mengelola project-project saya melalui GitHub dan mengasah kemampuan logika coding setiap hari.</p>
+            <div class="skills">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">Learning JS</span>
+            </div>
         </div>
 
-        <h2 class="section-title">Keahlian</h2>
-        <div class="skills-container">
-            <span class="skill-badge">HTML5</span>
-            <span class="skill-badge">CSS3</span>
-            <span class="skill-badge">Git & GitHub</span>
-            <span class="skill-badge">Belajar JavaScript</span>
-        </div>
-
-        <h2 class="section-title">Project Saya</h2>
-        <div class="project-list">
-            <a href="https://github.com/Nasry01" class="card">
-                <div>
-                    <h3>🇬🇧 Belajar Bahasa Inggris</h3>
-                    <p style="font-size: 0.8rem; color: #94a3b8;">Kumpulan kuis dan materi bahasa Inggris.</p>
-                </div>
-                <span>Lihat &rarr;</span>
-            </a>
-        </div>
-
-        <div class="social-links">
-            <a href="https://instagram.com/username_kamu">Instagram</a>
-            <a href="https://github.com/Nasry01">GitHub</a>
-        </div>
+        <h2 style="color: #38bdf8; margin-bottom: 15px; font-size: 1.2rem;">📂 Project Saya</h2>
+        <a href="https://github.com/Nasry01?tab=repositories" class="card">
+            <div>
+                <h3>🇬🇧 Belajar Bahasa Inggris</h3>
+                <p style="color: #94a3b8; font-size: 0.8rem;">Repository khusus untuk materi dan kuis bahasa Inggris.</p>
+            </div>
+            <span style="color: #38bdf8;">Lihat &rarr;</span>
+        </a>
 
         <footer>
-            &copy; 2025 Nasry | Dibuat dengan semangat belajar.
+            &copy; 2025 Nasry Portfolio | Built with GitHub Pages
         </footer>
     </div>
-
 </body>
 </html>
