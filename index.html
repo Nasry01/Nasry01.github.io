@@ -8,36 +8,68 @@
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         
         body {
-            background: #0f172a; /* Warna gelap navy */
+            background: #0f172a;
             color: #f8fafc;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
+            line-height: 1.6;
+            padding: 40px 20px;
         }
 
         .container {
-            max-width: 600px;
-            width: 100%;
-            text-align: center;
+            max-width: 700px;
+            margin: auto;
         }
 
+        /* Header Section */
+        header { text-align: center; margin-bottom: 50px; }
+        
         .profile-img {
-            width: 100px;
-            height: 100px;
+            width: 120px; height: 120px;
             border-radius: 50%;
             border: 3px solid #38bdf8;
             margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
         }
 
-        h1 { font-size: 2.5rem; margin-bottom: 10px; color: #38bdf8; }
-        p { color: #94a3b8; margin-bottom: 30px; }
+        h1 { font-size: 2.5rem; color: #38bdf8; margin-bottom: 5px; }
+        .tagline { color: #94a3b8; font-size: 1.1rem; }
 
-        .project-list {
-            display: grid;
-            gap: 15px;
+        /* About Section */
+        .section-title {
+            font-size: 1.5rem;
+            color: #38bdf8;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #1e293b;
+            display: inline-block;
+            padding-bottom: 5px;
         }
+
+        .about-box {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            border: 1px solid #334155;
+        }
+
+        /* Skills Section */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+
+        .skill-badge {
+            background: #0ea5e9;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        /* Project Cards */
+        .project-list { display: grid; gap: 15px; margin-bottom: 40px; }
 
         .card {
             background: #1e293b;
@@ -46,52 +78,70 @@
             text-decoration: none;
             color: white;
             border: 1px solid #334155;
-            transition: all 0.3s ease;
+            transition: 0.3s;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .card:hover {
-            transform: translateY(-5px);
+            transform: scale(1.02);
             border-color: #38bdf8;
-            background: #334155;
         }
 
-        .card h3 { font-size: 1.2rem; }
-        .card span { color: #38bdf8; font-weight: bold; }
+        /* Social Media */
+        .social-links { text-align: center; margin-top: 30px; }
+        .social-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+        .social-links a:hover { color: #38bdf8; }
 
-        footer { margin-top: 40px; font-size: 0.8rem; color: #64748b; }
+        footer { text-align: center; margin-top: 50px; font-size: 0.8rem; color: #64748b; }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <img src="https://github.com/Nasry01.png" alt="Profile" class="profile-img">
-        
-        <h1>Halo, Saya Nasry</h1>
-        <p>Junior Developer & Tech Enthusiast. Selamat datang di kumpulan project saya.</p>
+        <header>
+            <img src="https://github.com/Nasry01.png" alt="Profile" class="profile-img">
+            <h1>Nasry</h1>
+            <p class="tagline">Tech Learner & Future Developer</p>
+        </header>
 
+        <h2 class="section-title">Tentang Saya</h2>
+        <div class="about-box">
+            <p>Halo! Saya Nasry. Saat ini saya sedang aktif mempelajari pemrograman web melalui GitHub. Saya sangat tertarik dengan teknologi baru dan senang mencoba membuat berbagai macam project kecil untuk mengasah kemampuan logika saya.</p>
+        </div>
+
+        <h2 class="section-title">Keahlian</h2>
+        <div class="skills-container">
+            <span class="skill-badge">HTML5</span>
+            <span class="skill-badge">CSS3</span>
+            <span class="skill-badge">Git & GitHub</span>
+            <span class="skill-badge">Belajar JavaScript</span>
+        </div>
+
+        <h2 class="section-title">Project Saya</h2>
         <div class="project-list">
-            <a href="vocab_quiz.html" class="card">
+            <a href="https://github.com/Nasry01" class="card">
                 <div>
-                    <h3>🎮 Vocab Quiz</h3>
-                    <p style="font-size: 0.8rem; margin-bottom: 0;">Game kosa kata interaktif</p>
+                    <h3>🇬🇧 Belajar Bahasa Inggris</h3>
+                    <p style="font-size: 0.8rem; color: #94a3b8;">Kumpulan kuis dan materi bahasa Inggris.</p>
                 </div>
-                <span>Buka &rarr;</span>
-            </a>
-
-            <a href="#" class="card" style="opacity: 0.5; cursor: not-allowed;">
-                <div>
-                    <h3>🚀 Project Mendatang</h3>
-                    <p style="font-size: 0.8rem; margin-bottom: 0;">Sedang dalam proses...</p>
-                </div>
-                <span>Soon</span>
+                <span>Lihat &rarr;</span>
             </a>
         </div>
 
+        <div class="social-links">
+            <a href="https://instagram.com/username_kamu">Instagram</a>
+            <a href="https://github.com/Nasry01">GitHub</a>
+        </div>
+
         <footer>
-            &copy; 2025 Nasry Portfolio | Built with GitHub Pages
+            &copy; 2025 Nasry | Dibuat dengan semangat belajar.
         </footer>
     </div>
 
