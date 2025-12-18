@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nasry | Portfolio</title>
+    <title>Nasry | My Digital Learning Journey</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         
@@ -18,19 +18,20 @@
 
         .container { max-width: 650px; width: 100%; }
 
-        /* Header */
+        /* Header Section */
         header { text-align: center; margin-bottom: 40px; }
         .profile-img {
             width: 120px; height: 120px;
             border-radius: 50%;
             border: 3px solid #38bdf8;
             margin-bottom: 15px;
-            box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+            box-shadow: 0 0 25px rgba(56, 189, 248, 0.2);
+            object-fit: cover;
         }
         h1 { font-size: 2.2rem; color: #38bdf8; margin-bottom: 5px; }
-        .tagline { color: #94a3b8; font-size: 1rem; }
+        .tagline { color: #94a3b8; font-size: 1.1rem; font-style: italic; }
 
-        /* About Section */
+        /* About Section (Lobby) */
         .section {
             background: #1e293b;
             padding: 25px;
@@ -40,6 +41,7 @@
         }
         h2 { font-size: 1.3rem; color: #38bdf8; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
         .about-text { color: #cbd5e1; margin-bottom: 20px; }
+        .about-text strong { color: #38bdf8; }
 
         /* Badge Skills */
         .skills { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -52,8 +54,8 @@
             font-weight: bold;
         }
 
-        /* Project Section */
-        .project-title { font-size: 1.2rem; color: #38bdf8; margin-bottom: 15px; padding-left: 5px; }
+        /* Project & Music Section */
+        .section-title { font-size: 1.2rem; color: #38bdf8; margin: 25px 0 15px 5px; display: block; }
         
         .card {
             background: #1e293b;
@@ -66,6 +68,7 @@
             justify-content: space-between;
             align-items: center;
             transition: all 0.3s ease;
+            margin-bottom: 15px;
         }
 
         .card:hover {
@@ -74,48 +77,59 @@
             background: #24334d;
         }
 
-        .card-info h3 { font-size: 1.1rem; margin-bottom: 4px; }
+        .card-info h3 { font-size: 1.1rem; margin-bottom: 4px; display: flex; align-items: center; gap: 8px; }
         .card-info p { font-size: 0.85rem; color: #94a3b8; }
         .btn-link { color: #38bdf8; font-weight: bold; font-size: 0.9rem; }
 
-        footer { text-align: center; margin-top: 50px; font-size: 0.8rem; color: #64748b; }
+        footer { text-align: center; margin-top: 50px; font-size: 0.8rem; color: #64748b; border-top: 1px solid #1e293b; padding-top: 20px; }
     </style>
 </head>
 <body>
 
     <div class="container">
         <header>
-            <img src="https://github.com/Nasry01.png" alt="Nasry" class="profile-img">
-            <h1>Halo, Saya Nasry</h1>
+            <img src="https://github.com/Nasry01.png" alt="Nasry B" class="profile-img">
+            <h1>Nasry</h1>
             <p class="tagline">My Digital Learning Journey</p>
         </header>
 
         <div class="section">
             <h2>🏠 Tentang Saya (Lobby)</h2>
             <p class="about-text">
-                Selamat datang di profil saya! Saya adalah seorang pembelajar yang sangat tertarik dengan dunia teknologi. 
-              
+                Halo! Saya <strong>Nasry</strong> (dikenal sebagai <strong>Nasry B</strong> di dunia musik). 
+                Saya adalah seorang pembelajar digital yang memadukan dunia teknologi dan seni. 
+                Selain sedang mendalami pemrograman web, saya juga aktif sebagai <strong>Rapper</strong> dan produser musik menggunakan <strong>FL Studio</strong>. 
+                Bagi saya, coding dan memproduksi musik memiliki kemiripan: keduanya adalah tentang kreativitas dan presisi.
             </p>
             <div class="skills">
-                <span class="skill-tag">HTML</span>
-                <span class="skill-tag">CSS</span>
-                <span class="skill-tag">GitHub</span>
-                <span class="skill-tag">Learning JS</span>
+                <span class="skill-tag">Web Coding</span>
+                <span class="skill-tag">Music Production</span>
+                <span class="skill-tag">FL Studio</span>
+                <span class="skill-tag">Rapping</span>
+                <span class="skill-tag">English Learning</span>
             </div>
         </div>
 
-        <h3 class="project-title">📂 Project Saya</h3>
-        
+        <span class="section-title">📂 Web Projects</span>
         <a href="https://nasry01.github.io/Belajar-Bahasa-Inggris/" class="card">
             <div class="card-info">
                 <h3>🇬🇧 Belajar Bahasa Inggris</h3>
-                <p>Kumpulan materi dan kuis kosa kata bahasa Inggris.</p>
+                <p>Repository khusus untuk materi dan kuis kosa kata bahasa Inggris.</p>
             </div>
             <div class="btn-link">Lihat &rarr;</div>
         </a>
 
+        <span class="section-title">🎵 My Music</span>
+        <a href="#" class="card">
+            <div class="card-info">
+                <h3>🎤 Nasry B Tracks</h3>
+                <p>Kumpulan musik produksi saya menggunakan FL Studio.</p>
+            </div>
+            <div class="btn-link">Dengar &rarr;</div>
+        </a>
+
         <footer>
-            &copy; 2025 Nasry Portfolio | Built with GitHub Pages
+            &copy; 2025 Nasry B Portfolio | Built with GitHub Pages
         </footer>
     </div>
 
